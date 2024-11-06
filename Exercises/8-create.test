@@ -1,6 +1,6 @@
 ({
   name: 'createUser',
-  length: [30, 100],
+  length: [30, 150],
   cases: [
     ['Marcus', 'Roma', { name: 'Marcus', city: 'Roma' }],
   ],

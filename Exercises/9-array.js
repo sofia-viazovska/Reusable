@@ -9,8 +9,17 @@ Object example: `{ name: 'Marcus Aurelius', phone: '+380445554433' }`.
 `findPhoneByName(name: string): string`. Returning phone from that object
 where field `name` equals argument `name`. Use `for` loop for this search. */
 
-const phonebook = null;
+const phonebook = [
+  { name: 'Marcus Aurelius', phone: '+380445554433' },
+  { name: 'Sofia', phone: '+380501234567' }
+];
 
-const findPhoneByName = null;
+const findPhoneByName = (name) => {
+  for (const contact of phonebook) {
+    if (contact.name === name) return contact.phone;
+  }
+
+  return 'Not found';
+};
 
 module.exports = { phonebook, findPhoneByName };
